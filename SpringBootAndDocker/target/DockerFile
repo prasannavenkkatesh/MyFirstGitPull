@@ -1,0 +1,5 @@
+FROM openjdk:19-jdk
+LABEL maintainer="javaguides.net"
+EXPOSE 8080
+ADD target/Docker-With-SpringBoot.jar  Docker-With-SpringBoot.jar
+ENTRYPOINT ["java", "-jar", "/Docker-With-SpringBoot.jar"]
